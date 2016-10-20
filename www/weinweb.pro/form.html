@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Форма обратной связи</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Новомодные свистелки</a></li>
+					<li><a href="chapter2.html">Технологии графики в современных играх, часть 2: Апофеоз Past-Gen'а</a> </li>
+					<li><a href="chapter3.html">Сравнительная таблица применения технологий в играх</a></li>
+				</ul>
+			</nav>
+			<p></p>
+		</header>
+		<main>
+			<h2>Форма обратной связи</h2>
+			<form>
+				<label for="name">Ваше Ф.И.О</label>
+				<input type="text" name="fio" id="name" required>
+
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" required>
+
+				<label for="phone">Телефон</label>
+				<input type="text" name="phone" id="phone" required>
+				<br>
+				<br>
+				<label for="type_question" id="type">Тип обращения:</label>
+				<select name="type_question" id="type">
+					<option value="1">Техническая проблема</option>
+					<option value="2">Проблема с оплатой</option>
+					<option value="3">Проблема с сайтом</option>
+					<option value="4">Другая</option>
+				</select>
+				<br><br>
+				<label for="comment">Введите ваше сообщение</label><br>
+				<textarea name="name" id="comment" cols="60" rows="4" placeholder="Сообщение"></textarea>
+				<br><br>
+			<input type="submit" value="Отправить">
+			</form>
+		</main>
+		<p></p>
+		<footer>
+			<nav>
+				<a href="contact.html">Контакты</a>
+				<a href="form.html">Форма обратной связи</a>
+			</nav>
+		</footer>
+	</body>
+</html>
