@@ -1,80 +1,81 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8">
-		<title>Форма обратной связи</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
-	<body>
-		<header>
-			<nav>
-				<ul>
-					<li><a href="index.html">Новомодные свистелки</a></li>
-					<li><a href="chapter2.html">Технологии графики в современных играх, часть 2: Апофеоз Past-Gen'а</a> </li>
-					<li><a href="chapter3.html">Сравнительная таблица применения технологий в играх</a></li>
-				</ul>
-			</nav>
-			<p></p>
-		</header>
-		<main>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Форма обратной связи</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Новомодные свистелки</a></li>
+				<li><a href="chapter2.html">Технологии графики в современных играх, часть 2: Апофеоз Past-Gen'а</a> </li>
+				<li><a href="chapter3.html">Сравнительная таблица применения технологий в играх</a></li>
+			</ul>
+		</nav>
+		<p></p>
+	</header>
+	<main>
+		<br>
+		<h2>Форма обратной связи</h2>
+		<form>
+			<label for="name">Ваше Ф.И.О</label>
+			<input type="text" name="fio" id="name" required>
+
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" required>
+
+			<label for="phone">Телефон</label>
+			<input type="text" name="phone" id="phone" required>
 			<br>
-			<h2>Форма обратной связи</h2>
-			<form>
-				<label for="name">Ваше Ф.И.О</label>
-				<input type="text" name="fio" id="name" required>
-
-				<label for="email">Email</label>
-				<input type="email" name="email" id="email" required>
-
-				<label for="phone">Телефон</label>
-				<input type="text" name="phone" id="phone" required>
-				<br>
-				<br>
-				<label for="type_question" id="type">Тип обращения:</label>
-				<select name="type_question" id="type">
+			<br>
+			<label for="type_question">Тип обращения:</label>
+			<select name="type_question" id="type_question">
 					<option value="1">Техническая проблема</option>
 					<option value="2">Проблема с оплатой</option>
 					<option value="3">Проблема с сайтом</option>
 					<option value="4">Другая</option>
 				</select>
 
-				
+			<h3>Дополнительные опции</h3>
 
-				<h3>Дополнительные опции</h3>
+			<input type="checkbox" id="option_1" name="option_1">
+			<label for="option_1">Обработать в чате</label><br>
 
-				<input type="checkbox" id="option_1" name="option_1">
-				<label for="option_1">Обработать в чате</label><br>
+			<input type="checkbox" id="option_2" name="option_2">
+			<label for="option_2">Ответ на email</label>
+			<br>
 
-				<input type="checkbox" id="option_2" name="option_2">
-				<label for="option_2">Ответ на email</label>
-				<br>
+			<input type="checkbox" id="option_3" name="option_3">
+			<label for="option_3">Ответ в Telegram</label>
+			<br>
+			<input type="checkbox" id="option_4" name="option_4">
+			<label for="option_4">Ответ в Viber</label>
+			<br><br>
+			<label for="comment">Введите ваше сообщение</label><br>
+			<textarea name="name" id="comment" cols="60" rows="4" placeholder="Сообщение"></textarea>
+			<h2>Вам перезвонить?</h2>
 
-				<input type="checkbox" id="option_3" name="option_3">
-				<label for="option_3">Ответ в Telegram</label>
-				<br>
-				<input type="checkbox" id="option_4" name="option_4">
-				<label for="option_4">Ответ в Viber</label>
-				<br><br>
-				<label for="comment">Введите ваше сообщение</label><br>
-				<textarea name="name" id="comment" cols="60" rows="4" placeholder="Сообщение"></textarea>
-				<h2>Вам перезвонить?</h2>
+			<input type="radio" id="type_business" name="type_trip" value="type_business">
+			<label for="type_business">Да</label><br>
 
-				<input type="radio" id="type_business" name="type_trip" value="type_business">
-				<label for="type_business">Да</label><br>
+			<input type="radio" id="type_resort" name="type_trip" value="type_resort">
+			<label for="type_resort">Нет</label><br><br>
 
-				<input type="radio" id="type_resort" name="type_trip" value="type_resort">
-				<label for="type_resort">Нет</label><br><br>
-
-				<input type="file" name="f"> <br><br>
+			<input type="file" name="f"> <br><br>
 			<input type="submit" value="Отправить">
-			</form>
-		</main>
-		<p></p>
-		<footer>
-			<nav>
-				<a href="contact.html">Контакты</a>
-				<a href="form.html">Форма обратной связи</a>
-			</nav>
-		</footer>
-	</body>
+		</form>
+	</main>
+	<p></p>
+	<footer>
+		<nav>
+			<a href="contact.html">Контакты</a>
+			<a href="form.html">Форма обратной связи</a>
+		</nav>
+	</footer>
+</body>
+
 </html>
