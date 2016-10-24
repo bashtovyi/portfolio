@@ -50,17 +50,17 @@ pre {
 	font-weight: 400;
 	line-height: 18.5714px;
 }
- th {
- 	background-color: #68BCFF;
- 	align-content: center; 	
- }
- td {
- 	align-self: center;
- }
- tfoot td {
- 	background-color: #1EFF74;
- }
- .center{
+th {
+	background-color: #68BCFF;
+	align-content: center; 	
+}
+td {
+	align-self: center;
+}
+tfoot td {
+	background-color: #0c9;
+}
+.center{
 	margin:0 auto;
 	width:200px;
 	height:200px;

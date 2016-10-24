@@ -1,8 +1,14 @@
+
 body {
-	margin: 20px;
+  margin: 20px;
+  background-color: #FFF;
+}
+
+article {
+  margin: 10px;
 }
 p {
-	padding: 5px;
+	margin: 10px;
 }
 li {
 	padding: 5px;
@@ -12,12 +18,62 @@ nav {
 	display: block;
 }
 .fig {
-    display: block;
-    text-align: center;
-   }
- .fig img {
- 	border-radius:10%;
- 	 }
-   main,article, footer,header {
-   	display: block;
-   }
+  display: block;
+  text-align: center;
+}
+.fig img {
+  border-radius:2%;
+  width: 75%;
+}
+main,article, footer,header {
+  display: block;
+}
+h1 {
+  font-family: "Helvetica Neue";
+  font-size: 28px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 7px;
+  text-shadow: 0.5px 1px 1px #292828;
+}
+h2 {
+  font-family: "Helvetica Neue";
+  font-size: 22px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 15.4px;
+  text-shadow: 0.5px 1px 1px #292828;
+}
+p {
+  font-family: "Helvetica Neue";
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 24.2857px;
+}
+a {
+  font-family: "Helvetica Neue";
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 24.2857px;
+}
+a:link {
+  text-decoration: none;
+  color: #497DDD;  
+}
+a:visited {
+  color: #EF7D55;
+}
+a:hover {
+  color: #154088; 
+  border-bottom: .07em solid;
+}
+a:active {
+  color: #497DDD; 
+  border-bottom: 1px dashed;
+}

@@ -13,47 +13,45 @@
 	<nav>
 		<a href="index.html">Статьи</a>
 		<a href="form.html">Форма заказа</a>
-		<a href="#">Обо мне</a>
 		<a href="contact.html">Контакты</a>
+		<a href="media.html">Видеоматериалы</a>
 	</nav>
 	<main>
 		<br>
-		<h2>Форма обратной связи</h2>
+		<h2>Форма заказа</h2>
 		<form>
 			<label for="name">Ваше Ф.И.О</label>
-			<input type="text" name="fio" id="name" required>
+			<input type="text" name="fio" id="name" required placeholder="Иванов Иван Иваныч">
 
 			<label for="email">Email</label>
-			<input type="email" name="email" id="email" required>
+			<input type="email" name="email" id="email" required placeholder="example@mail.com">
 
 			<label for="phone">Телефон</label>
-			<input type="text" name="phone" id="phone" required>
+			<input type="text" name="phone" id="phone" required placeholder="+380965375778">
 			<br>
 			<br>
-			<label for="type_question">Тип обращения:</label>
+			<label for="type_question">Что вас интересует:</label>
 			<select name="type_question" id="type_question">
-				<option value="1">Техническая проблема</option>
-				<option value="2">Проблема с оплатой</option>
-				<option value="3">Проблема с сайтом</option>
-				<option value="4">Другая</option>
+				<option value="1">Верстка страницы</option>
+				<option value="2">Landing Page</option>
+				<option value="3">Разработка дизайна сайта</option>
+				<option value="4">Создание макета</option>
 			</select>
 
 			<h3>Дополнительные опции</h3>
 
 			<input type="checkbox" id="option_1" name="option_1">
-			<label for="option_1">Обработать в чате</label><br>
+			<label for="option_1">Адаптивная верстка</label><br>
 
 			<input type="checkbox" id="option_2" name="option_2">
-			<label for="option_2">Ответ на email</label>
+			<label for="option_2">Валидный сайт</label>
 			<br>
 
 			<input type="checkbox" id="option_3" name="option_3">
-			<label for="option_3">Ответ в Telegram</label>
-			<br>
-			<input type="checkbox" id="option_4" name="option_4">
-			<label for="option_4">Ответ в Viber</label>
+			<label for="option_3">SEO-оптимизация</label>
 			<br><br>
-			<label for="comment">Введите ваше сообщение</label><br>
+			<label for="comment">Введите ваше сообщение</label>
+			<p></p>
 			<textarea name="name" id="comment" cols="60" rows="4" placeholder="Сообщение"></textarea>
 			<h2>Вам перезвонить?</h2>
 
@@ -64,7 +62,7 @@
 			<label for="type_resort">Нет</label><br><br>
 
 			<input type="file" name="f"> <br><br>
-			<input type="submit" value="Отправить">
+			<input type="submit" value="Сделать заказ">
 		</form>
 	</main>
 	<p></p>
