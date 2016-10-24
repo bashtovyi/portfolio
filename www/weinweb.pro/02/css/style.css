@@ -1,0 +1,67 @@
+footer nav {
+	background-color: #C4C0C0;
+}
+
+h1 {
+	font-family: "Helvetica Neue";
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 8px;
+}
+h2 {
+	font-family: "Helvetica Neue";
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 7px;
+}
+h3 {
+	font-family: "Helvetica Neue";
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 7px;
+}
+p {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+blockquote {
+	font-family: "Helvetica Neue";
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+pre {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px;
+}
+ th {
+ 	background-color: #68BCFF;
+ 	align-content: center; 	
+ }
+ td {
+ 	align-self: center;
+ }
+ tfoot td {
+ 	background-color: #1EFF74;
+ }
+ .center{
+	margin:0 auto;
+	width:200px;
+	height:200px;
+}

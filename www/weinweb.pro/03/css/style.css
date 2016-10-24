@@ -1,0 +1,23 @@
+body {
+	margin: 20px;
+}
+p {
+	padding: 5px;
+}
+li {
+	padding: 5px;
+}
+nav {
+	margin: auto;
+	display: block;
+}
+.fig {
+    display: block;
+    text-align: center;
+   }
+ .fig img {
+ 	border-radius:10%;
+ 	 }
+   main,article, footer,header {
+   	display: block;
+   }
