@@ -77,3 +77,24 @@ a:active {
   color: #497DDD; 
   border-bottom: 1px dashed;
 }
+th {
+  background-color: #68BCFF;
+  align-content: center;  
+}
+td {
+  align-self: center;
+}
+tfoot td {
+  background-color: #0c9;
+}
+table {
+ border-style: dotted;
+  width: 50%;
+}
+th,td {
+  border-style: solid;
+  text-align: center;
+}
+iframe {
+  border: 0;
+}

@@ -65,3 +65,6 @@ tfoot td {
 	width:200px;
 	height:200px;
 }
+iframe {
+	border 0;
+}
