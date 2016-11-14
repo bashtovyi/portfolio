@@ -1,0 +1,2 @@
+[2016-11-06 13:29:11] layer "bg.jpg": Duplicate path: bg.jpg
+[2016-11-06 13:29:11] layer "logo.png": Duplicate path: logo.png
