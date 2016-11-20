@@ -1,0 +1,57 @@
+@import "utils.css";
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.block {
+    background: rgba(255, 153, 0, 1);
+    padding: 2rem;
+    color: #000;
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer {
+    background-color: #252525;
+}
+
+
+/*==========  Desktop First Method  ==========*/
+
+
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+
+@media only screen and (max-width: 1200px) {}
+
+
+/* Medium Devices, Desktops - adaptive styles bofore 992px */
+
+@media only screen and (max-width: 992px) {}
+
+
+/* Small Devices, Tablets - adaptive styles bofore 768px */
+
+@media only screen and (max-width: 768px) {}
+
+
+/* Extra Small Devices, Phones - adaptive styles bofore 480px */
+
+@media only screen and (max-width: 480px) {}
+
+
+/* Custom, iPhone Retina - adaptive styles bofore 320px */
+
+@media only screen and (max-width: 320px) {}
