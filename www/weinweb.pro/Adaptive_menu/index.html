@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Адаптивное меню</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+</head>
+<body>
+	<nav>
+	    <a href="#" id="toogle">Меню</a>
+	    <ul class="clearfix">
+	        <li><a href="#">О нас</a></li>
+	        <li><a href="#">Вопросы</a></li>
+	        <li><a href="#">Ответы</a></li>
+	        <li><a href="#">Доставка</a></li>
+	        <li><a href="#">Цены</a></li>
+	        <li><a href="#">Отследить</a></li>
+	    </ul>
+	</nav>
+
+	<script>
+	    $(function() {
+
+	        var toogle = $('#toogle');
+	        var menu = $('nav ul');
+
+	        $(toogle).on("click", function(e){
+	            e.preventDefault();
+	            menu.slideToggle();
+	        });
+	        $(window).resize(function(){
+	            var w = $(window).width();
+	            if(w > 640 && menu.is(':hidden')) {
+	                menu.removeAttr('style');
+	            }
+	        });
+	    });
+	</script>
+</body>
+</html>
