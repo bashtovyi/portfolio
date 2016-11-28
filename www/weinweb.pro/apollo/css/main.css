@@ -97,6 +97,7 @@ body {
   margin-bottom: 30px;
 }
 .line {
+  margin-top: 4rem ;
   border-top: 1px solid #EAEFF5;
 }
 .footer {
@@ -369,5 +370,69 @@ a.active {
 .owl-next {
   right: 0;
   background-image: url('../img/icons/arrow-right.png');
+}
+.benefit-header {
+  font-size: 28px;
+  color: #333333;
+  font-weight: 700;
+  line-height: 1.357;
+  padding-top: 1.5rem;
+  letter-spacing: -0.02rem;
+}
+.benefit-header:last-child {
+  padding-bottom: 0;
+}
+@media (min-width: 762px) {
+  .benefit-header:nth-last-child(2) {
+    padding-bottom: 0;
+  }
+  .benefit-header:last-child {
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .benefit-header {
+    margin-bottom: 2.4rem;
+    font-size: 3.8rem;
+    line-height: 1.263;
+  }
+}
+.benefit-image {
+  height: 13rem;
+  margin-bottom: 1.8rem;
+  display: table;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .benefit-image {
+    margin-bottom: 2.4rem;
+  }
+}
+.benefit-image div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.benefit-image img {
+  display: inline-block;
+}
+.benefit-info {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 1200px) {
+  .benefit-info {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+}
+.benefit-text {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #777;
+  margin-bottom: 3rem;
 }
 /*# sourceMappingURL=main.css.map */
