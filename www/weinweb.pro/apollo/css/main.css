@@ -364,7 +364,7 @@ a.active {
 }
 .owl-prev {
   left: 0;
-  background-image: url('/img/icons/arrow-left.png');
+  background-image: url('../img/icons/arrow-left.png');
 }
 .owl-next {
   right: 0;
