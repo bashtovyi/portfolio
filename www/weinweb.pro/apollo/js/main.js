@@ -15,7 +15,7 @@ $(document).ready(function() {
 	    menu.slideToggle();
 
 	    // Добавляем модификатор --active
-	    $(this).toggleClass('navigation_toggle-button-active');
+	    $(this).toggleClass('navigation__toggle-button--active');
 	    
 	});
 
@@ -27,15 +27,23 @@ $(document).ready(function() {
 	    }
 	});
 
-	// Вызываем OwlCarousel
-  $("#slider-top").owlCarousel({
-  	item:1,
-  	singleItem: true,
-  	navigation: true,
-  	theme: "slider-theme",
-  	navigationText : ["",""],
-  	slideSpeed: 800
-  });
- 
+
+	// Вызов слайдера owl-carousel
+	$("#top-slider").owlCarousel({
+		singleItem: true,
+		navigation: true,
+		theme: "top-slider-theme",
+		navigationText : ["",""],
+		slideSpeed: 600
+	});
+
+	
 });
 
+
+
+
+  
+     
+      	
+     
