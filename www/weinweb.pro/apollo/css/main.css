@@ -102,6 +102,13 @@ body {
 .footer {
   background-color: #252525;
 }
+.sub__tex {
+  font-size: 1.4rem;
+  color: #777777;
+  line-height: 1.714;
+  text-align: center;
+  margin-bottom: 5rem;
+}
 .heading {
   color: #333;
   font-size: 2.8rem;
@@ -131,8 +138,8 @@ body {
   padding-top: 0.3rem;
   padding-left: 0.9rem;
   position: absolute;
-  left: -13px;
-  top: -40px;
+  left: -1.3rem;
+  top: -4rem;
   content: "0";
 }
 @media (min-width: 1200px) {
@@ -163,6 +170,40 @@ body {
   .section--m-p-b-0 {
     padding-bottom: 0;
   }
+}
+.box__button {
+  background-color: #252525;
+  box-shadow: 0px 8px 16px 0px rgba(171, 171, 171, 0.5);
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  display: inline-block;
+  padding: 1.4rem 4.4rem 1.2rem 4.4rem;
+  border-radius: 2.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.box__button:hover,
+.box__button:active,
+.box__button:focus {
+  background-color: #ffc80a;
+  text-decoration: none;
+  color: #fff;
+}
+.box__button--orange {
+  background-color: #FFC80A;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.box__button--orange:hover,
+.box__button--orange:active,
+.box__button--orange:focus {
+  background-color: #ffe400;
+  text-decoration: none;
+  color: #000;
 }
 .logo {
   text-align: center;
@@ -524,5 +565,66 @@ body {
   .header-content {
     margin-top: 2rem;
   }
+}
+.box {
+  border-radius: 0.7rem;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 40px 0px rgba(99, 117, 138, 0.3);
+  padding: 3.5rem 2.5rem 4.5rem 2.5rem;
+}
+@media (min-width: 768px) {
+  .box {
+    margin-bottom: 0;
+  }
+}
+.box__type {
+  font-size: 1.2rem;
+  color: #242526;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.box__price {
+  font-size: 4.8rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #242526;
+  margin-bottom: 2rem;
+}
+.box__price:after {
+  content: "c";
+  font-family: 'als_rublregular';
+}
+.box__period {
+  font-size: 1.2rem;
+  color: #242526;
+  margin-bottom: 3.5rem;
+}
+.box__benefits {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+}
+.box__benefits ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.box__benefits ul li {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+.box__benefits ul li:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url('../../img/icons/ok-icon.png');
+  background-repeat: no-repeat;
+  background-position: left 2px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.box__last {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
