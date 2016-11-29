@@ -4,8 +4,6 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 /*
@@ -53,7 +51,7 @@ textarea {
 .clearfix:after {
   content: " ";
   /* 1 */
-  display: table;
+  display: table
   /* 2 */
 }
 .clearfix:after {
@@ -104,41 +102,34 @@ body {
 .footer {
   background-color: #252525;
 }
-/*==========  Desktop First Method  ==========*/
-/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
-/* Medium Devices, Desktops - adaptive styles bofore 992px */
-/* Small Devices, Tablets - adaptive styles bofore 768px */
-/* Extra Small Devices, Phones - adaptive styles bofore 480px */
-/* Custom, iPhone Retina - adaptive styles bofore 320px */
 .heading {
   color: #333;
-  font-size: 28px;
-  margin-bottom: 30px;
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
   font-weight: 700;
   margin-top: 0;
   position: relative;
 }
 @media (min-width: 1200px) {
   .heading {
-    font-size: 38px;
-    margin-bottom: 40px;
+    font-size: 3.8rem;
+    margin-bottom: 4rem;
   }
 }
 .heading--smaller-margin {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 .heading--number:before {
-  height: 26px;
-  width: 26px;
+  height: 2.6rem;
+  width: 2.6rem;
   display: block;
-  -webkit-border-radius: 13px;
-  border-radius: 13px;
+  border-radius: 1.3rem;
   background-color: #FFC80A;
   color: #fff;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
-  padding-top: 3px;
-  padding-left: 9px;
+  padding-top: 0.3rem;
+  padding-left: 0.9rem;
   position: absolute;
   left: -13px;
   top: -40px;
@@ -146,8 +137,8 @@ body {
 }
 @media (min-width: 1200px) {
   .heading--number:before {
-    left: -32px;
-    top: -30px;
+    left: -3.2rem;
+    top: -2rem;
   }
 }
 .heading--number-1:before {
@@ -157,16 +148,16 @@ body {
   content: "2";
 }
 .section {
-  padding-top: 60px;
-  padding-bottom: 50px;
+  padding-top: 6rem;
+  padding-bottom: 5rem;
 }
 @media (min-width: 1170px) {
   .section {
-    padding-bottom: 67px;
+    padding-bottom: 6.7rem;
   }
 }
 .section--p-t-70 {
-  padding-top: 70px;
+  padding-top: 7rem;
 }
 @media (min-width: 992px) {
   .section--m-p-b-0 {
@@ -248,11 +239,17 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #35577D;
 }
 @media (min-width: 992px) {
   .navigation ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     background-color: transparent;
   }
@@ -328,8 +325,6 @@ body {
   background-image: url('../img/bg/slider-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   box-shadow: 0px 3px 25px 0px #688ab3;
 }
@@ -361,10 +356,6 @@ body {
     line-height: 32px;
   }
 }
-/*
-* 	Owl Carousel Owl Demo Theme 
-*	v1.3.3
-*/
 .top-slider-theme .owl-controls {
   margin-top: 10px;
   text-align: center;
@@ -409,7 +400,7 @@ body {
 .top-slider-theme .owl-controls .owl-page {
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  *display: inline
   /*IE7 life-saver */
 }
 .top-slider-theme .owl-controls .owl-page span {
@@ -420,8 +411,6 @@ body {
   filter: alpha(opacity=50);
   /*IE7 fix*/
   opacity: 0.5;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
   border-radius: 20px;
   background: #fff;
 }
@@ -438,8 +427,6 @@ body {
   color: #FFF;
   padding: 2px 10px;
   font-size: 12px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
   border-radius: 30px;
 }
 /* preloading images */
@@ -503,8 +490,13 @@ body {
   line-height: 24px;
   color: #777;
 }
+@media (min-width: 1200px) {
+  .service-description__img .notebook-left {
+    margin-left: -14rem;
+  }
+}
 .service-description__img--xs-m-b-20 {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
   .service-description__img--xs-m-b-20 {
@@ -512,19 +504,25 @@ body {
   }
 }
 .service-description__content {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
   color: #777;
 }
 .service-description__content p {
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 2.2rem;
 }
 .service-description__button-arrow {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
   background-image: url("../img/icons/arrow-orange.png");
   background-repeat: no-repeat;
   background-position: left top;
 }
+@media (min-width: 1200px) {
+  .header-content {
+    margin-top: 2rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
