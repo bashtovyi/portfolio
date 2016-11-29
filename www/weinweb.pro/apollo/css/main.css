@@ -99,9 +99,6 @@ body {
 .line {
   border-top: 1px solid #EAEFF5;
 }
-.footer {
-  background-color: #252525;
-}
 .sub__tex {
   font-size: 1.4rem;
   color: #777777;
@@ -618,7 +615,7 @@ body {
   content: "";
   width: 12px;
   height: 12px;
-  background-image: url('../../img/icons/ok-icon.png');
+  background-image: url('../img/icons/ok-icon.png');
   background-repeat: no-repeat;
   background-position: left 2px;
   margin-right: 10px;
@@ -626,5 +623,39 @@ body {
 }
 .box__last {
   margin-bottom: 0;
+}
+.footer {
+  background-color: #252525;
+}
+.footer__title {
+  color: #f7f8f9;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.footer__nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.footer__nav li {
+  margin: 0;
+  padding: 0;
+  line-height: 2rem;
+  margin-bottom: 1.6rem;
+}
+.footer__nav a {
+  text-decoration: none;
+  color: #6c6c6c;
+}
+.footer__nav a:hover {
+  color: #ffc80a;
+  text-decoration: none;
+}
+.copyright {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #6c6c6c;
+  margin-top: 4rem ;
 }
 /*# sourceMappingURL=main.css.map */
