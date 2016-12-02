@@ -27,6 +27,13 @@ $(document).ready(function() {
 	    }
 	});
 
+	var w=$(window).width();
+	if ( w < 992 ) {
+		$('nav.navigation a').on("click", function(){
+			 menu.slideToggle();
+			});
+	}
+
 
 	// Вызов слайдера owl-carousel
 	$("#top-slider").owlCarousel({
@@ -35,6 +42,10 @@ $(document).ready(function() {
 		theme: "top-slider-theme",
 		navigationText : ["",""],
 		slideSpeed: 800
+	});
+	//slide2id
+	$("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
+	    highlightSelector:"nav a"
 	});
 
 	

@@ -6,12 +6,20 @@
   letter-spacing: 3px;
   text-transform: uppercase;
   box-shadow: 0px 5px 10px 0px rgba(42, 73, 109, 1);
-  z-index: 1;
-  position: relative;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+ 
+  @media (min-width:992px) {
+    position: static;
+  }
   @media (min-width: 992px) {
     background-color: #38383A;
     padding-top: 23px;
     padding-bottom: 23px;
+    
   }
   a {
     color: #FFF;
