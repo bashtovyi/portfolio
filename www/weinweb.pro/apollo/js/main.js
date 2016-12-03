@@ -27,11 +27,11 @@ $(document).ready(function() {
 	    }
 	});
 
-	var w=$(window).width();
-	if ( w < 992 ) {
+	var windowWidth = $(window).width();
+	if ( windowWidth < 992 ) {
 		$('nav.navigation a').on("click", function(){
-			 menu.slideToggle();
-			});
+			menu.slideToggle();
+		});
 	}
 
 
