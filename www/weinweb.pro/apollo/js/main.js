@@ -27,13 +27,16 @@ $(document).ready(function() {
 	    }
 	});
 
-	var windowWidth = $(window).width();
-	if ( windowWidth < 992 ) {
-		$('nav.navigation a').on("click", function(){
-			menu.slideToggle();
-		});
-	}
+	$('nav.navigation a').on("click", function(){
+		fnstart();
+	});
 
+	function fnstart(){	
+		if ( $("#navigation-toggle").hasClass("navigation__toggle-button--active")  ) {
+   			pull.toggleClass('navigation__toggle-button--active');
+			menu.slideToggle();
+		}
+	};
 
 	// Вызов слайдера owl-carousel
 	$("#top-slider").owlCarousel({
