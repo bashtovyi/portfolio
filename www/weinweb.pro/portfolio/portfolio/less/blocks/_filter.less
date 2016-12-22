@@ -1,0 +1,54 @@
+.filter {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 0.8rem;
+  margin-bottom: 5rem;
+  
+  @media (min-width: 768px) {
+  	margin-bottom: 4.5rem;
+  	padding-top: 2rem;
+  }
+}
+
+.filter__block {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.filter__elemet {
+	margin: 0 0 0.9rem;
+	padding: 0;
+	display:block;
+	
+	&:last-child {
+		margin-right: 0;
+	}
+	@media (min-width: 768px) {
+		margin-right: 0;
+		display: inline-block;
+	}
+	@media (min-width: 1200px) {
+		margin-right: 1.5rem;
+		
+	}
+}
+
+.filter__button {
+	color:#cecece;
+	display: inline-block;
+	padding: 1.2rem 3.1rem 1.5rem;
+	cursor: pointer;
+	&:hover {
+	color:#000;
+	}
+}
+
+
+.filter__button--active {
+	border:2px solid @blueHeading;
+	padding: 1rem 2.9rem 1.3rem;
+	color:#000;
+}
