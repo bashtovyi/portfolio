@@ -19,15 +19,15 @@
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
 </head>
 
 <body>
   <!--[if lt IE 8]>
-      <p class="browserupgrade">Вы используете <strong>устаревшую</strong> версию браузера. Пожалуйста <a href="http://browsehappy.com/">обновите свой браузер</a>.</p>
-  <![endif]-->
+<p class="browserupgrade">Вы используете <strong>устаревшую</strong> версию браузера. Пожалуйста <a href="http://browsehappy.com/">обновите свой браузер</a>.</p>
+<![endif]-->
   <!-- Здесь пишем код -->
   <!-- Шапка -->
   <div class="header">
@@ -141,71 +141,185 @@
     <!-- Резюме -->
   </div>
   <div class="line"></div>
+
+
+
+
   <!-- Портфолио -->
-  <div id="portfolio" class="section--padding-smaller section--gear">
+  <div id="portfolio" class="section section--padding-smaller section--gear">
     <div class="container">
-      <div class="heading heading--centered">
-        Мои работы
-      </div>
-      <div class="filter">
-        <ul class="filter__block">
-          <li class="filter__elemet">
-            <span class="filter__button filter__button--active">Все</span></li>
-          <li class="filter__elemet">
-            <span class="filter__button">HTML+CSS</span></li>
-          <li class="filter__elemet">
-            <span class="filter__button">Bootstrap</span></li>
-          <li class="filter__elemet">
-            <span class="filter__button">учебные</span></li>
-          <li class="filter__elemet">
-            <span class="filter__button">на заказ</span></li>
+      
+      <!-- Заголовок -->
+      <div class="heading heading--centered">Мои работы</div>
+      <!-- // Заголовок -->
+
+      
+      <!-- Фильтр работ -->
+      <div class="filter-block ">
+        <ul class="filter-block__block">
+          <li class="filter-block__element">
+            <span class="filter-block__button filter-block__button--active filter" data-filter="all">Все</span>
+          </li>
+          <li class="filter-block__element">
+            <span class="filter-block__button filter" data-filter=".html-css">HTML+CSS</span>
+          </li>
+          <li class="filter-block__element">
+            <span class="filter-block__button filter" data-filter=".bootstrap">Bootstrap</span>
+          </li>
+          <li class="filter-block__element">
+            <span class="filter-block__button filter" data-filter=".tutorial">Учебные</span>
+          </li>
+          <li class="filter-block__element">
+            <span class="filter-block__button filter" data-filter=".payed">На заказ</span>
+          </li>
         </ul>
       </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="block">
-            Работа 1
+      <!-- // Фильтр работ -->
+
+      <!-- Блок - ряд с работами -->
+      <div class="row" id="portfolio-projects">
+
+        <!-- Работа в портфолио -->
+        <div class="col-sm-4 mix html-css tutorial">
+          <div class="portfolio-item">
+            <div class="portfolio-item__image">
+              <a href="#" class="portfolio-item__image__hover">
+                <i class="fa fa-search" aria-hidden="true"></i><br>
+                <span>смотреть макет</span>
+              </a>
+              <img src="usercontent/img/project_organica.jpg">
+            </div>
+            <div class="portfolio-item__title">
+              <a href="#">Учебный макет Organica</a>
+            </div>
+            <div class="portfolio-item__description">
+              Верстка одностраничного сайта по PSD макету.
+            </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="block">
-            Работа 2
+        <!-- // Работа в портфолио -->
+
+        <!-- Работа в портфолио -->
+        <div class="col-sm-4 mix bootstrap tutorial">
+          <div class="portfolio-item">
+            <div class="portfolio-item__image">
+              <a href="#" class="portfolio-item__image__hover">
+                <i class="fa fa-search" aria-hidden="true"></i><br>
+                <span>смотреть макет</span>
+              </a>
+              <img src="usercontent/img/project_apollo.jpg" alt="Учебный макет Аполло">
+            </div>
+            <div class="portfolio-item__title">
+              <a href="#">Учебный макет Аполло</a>
+            </div>
+            <div class="portfolio-item__description">
+              Верстка лендинга хостинг компании. Мобильная адаптивность.
+            </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="block">
-            Работа 3
+        <!-- // Работа в портфолио -->
+
+        <!-- Работа в портфолио -->
+        <div class="col-sm-4 mix bootstrap tutorial">
+          <div class="portfolio-item">
+            <div class="portfolio-item__image">
+              <a href="#" class="portfolio-item__image__hover">
+                <i class="fa fa-search" aria-hidden="true"></i><br>
+                <span>смотреть макет</span>
+              </a>
+              <img src="usercontent/img/project_portfolio.jpg" alt="Личный сайт портфолио">
+            </div>
+            <div class="portfolio-item__title">
+              <a href="#">Личный сайт портфолио</a>
+            </div>
+            <div class="portfolio-item__description">
+              Верстка личного сайта портфолио на котором вы сейчас находитесь.
+            </div>
           </div>
         </div>
+        <!-- // Работа в портфолио -->
+
+        <!-- Работа в портфолио -->
+        <div class="col-sm-4 mix html-css payed">
+          <div class="portfolio-item">
+            <div class="portfolio-item__image">
+              <a href="#" class="portfolio-item__image__hover">
+                <i class="fa fa-search" aria-hidden="true"></i><br>
+                <span>смотреть макет</span>
+              </a>
+              <img src="usercontent/img/project_auto.jpg" alt="Промо сайт автомобиля">
+            </div>
+            <div class="portfolio-item__title">
+              <a href="#">Промо сайт автомобиля</a>
+            </div>
+            <div class="portfolio-item__description">
+              Верстка одностраничного сайта по PSD макету.
+            </div>
+          </div>
+        </div>
+        <!-- // Работа в портфолио -->
+
+        <!-- Работа в портфолио -->
+        <div class="col-sm-4 mix bootstrap payed">
+          <div class="portfolio-item">
+            <div class="portfolio-item__image">
+              <a href="#" class="portfolio-item__image__hover">
+                <i class="fa fa-search" aria-hidden="true"></i><br>
+                <span>смотреть макет</span>
+              </a>
+              <img src="usercontent/img/project_moto.jpg" alt="Магазин мотоциклов">
+            </div>
+            <div class="portfolio-item__title">
+              <a href="#">Магазин мотоциклов</a>
+            </div>
+            <div class="portfolio-item__description">
+              Верстка лендинга для компании Indian Motorcycles.
+            </div>
+          </div>
+        </div>
+        <!-- // Работа в портфолио -->
+
+        <!-- Работа в портфолио -->
+        <div class="col-sm-4 mix html-css payed">
+          <div class="portfolio-item">
+            <div class="portfolio-item__image">
+              <a href="#" class="portfolio-item__image__hover">
+                <i class="fa fa-search" aria-hidden="true"></i><br>
+                <span>смотреть макет</span>
+              </a>
+              <img src="usercontent/img/project_music.jpg" alt="Магазин аудиотехники">
+            </div>
+            <div class="portfolio-item__title">
+              <a href="#">Магазин аудиотехники</a>
+            </div>
+            <div class="portfolio-item__description">
+              Верстка страниц для магазина винтажной аудиотехники.
+            </div>
+          </div>
+        </div>
+        <!-- // Работа в портфолио -->
+
+
       </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="block">
-            Работа 4
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="block">
-            Работа 5
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="block">
-            Работа 6
-          </div>
-        </div>
-      </div>
+      <!-- // Блок - ряд с работами -->
+
+
+
     </div>
   </div>
   <!-- // Портфолио -->
+
+
+
   <!-- Контакты -->
-  <div class="block-bg">
-    <div id="contacts" class="container">
+  <div id="contacts" class="block-bg">
+    <div class="container">
       <div class="row">
         <div class="col-sm-6">
           <div class="block">
             Контакты - текст
           </div>
+
           <div class="row">
             <div class="col-lg-6">
               <div class="block">
@@ -218,9 +332,11 @@
               </div>
             </div>
           </div>
+
           <div class="block">
             Социальные иконки
           </div>
+
         </div>
         <div class="col-sm-6">
           <div class="block">
@@ -231,19 +347,32 @@
     </div>
   </div>
   <!-- // Контакты -->
+
   <!-- Копирайт -->
   <div class="block-bg-copyright">
     <div class="container">
       <div class="block">
-        &copy;Copyright
+        Копирайт
       </div>
     </div>
   </div>
   <!-- // Копирайт -->
+
+
+
+
+  
+
+
+  <!-- Vendor scripts -->
   <script src="libs/jquery/jquery-1.11.2.min.js"></script>
   <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+  <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+  <script type="text/javascript" src="libs/mixitup2/jquery.mixitup.min.js"></script>
+
+  <!-- Custom scripts -->
   <script src="js/navigation.js"></script>
   <script src="js/main.js"></script>
-</body>
 
+</body>
 </html>

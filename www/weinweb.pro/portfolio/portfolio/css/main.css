@@ -485,57 +485,188 @@ a.mouse_scroll:focus {
   margin-right: 5px;
   font-size: 1.8rem;
 }
-.filter {
-  font-size: 1.6rem;
+.filter-block {
+  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-top: 0.8rem;
-  margin-bottom: 5rem;
+  padding-top: 19px;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  .filter {
-    margin-bottom: 4.5rem;
-    padding-top: 2rem;
+  .filter-block {
+    padding-top: 8px;
+    margin-bottom: 50px;
   }
 }
-.filter__block {
-  list-style-type: none;
+.filter-block__block {
   margin: 0;
   padding: 0;
+  list-style-type: none;
   text-align: center;
 }
-.filter__elemet {
-  margin: 0 0 0.9rem;
+.filter-block__element {
+  margin: 0 0 9;
   padding: 0;
   display: block;
 }
-.filter__elemet:last-child {
-  margin-right: 0;
-}
 @media (min-width: 768px) {
-  .filter__elemet {
-    margin-right: 0;
+  .filter-block__element {
+    margin-right: 0px;
     display: inline-block;
   }
 }
 @media (min-width: 1200px) {
-  .filter__elemet {
-    margin-right: 1.5rem;
+  .filter-block__element {
+    margin-right: 15px;
+  }
+  .filter-block__element:last-child {
+    margin-right: 0;
   }
 }
-.filter__button {
-  color: #cecece;
+.filter-block__button {
   display: inline-block;
-  padding: 1.2rem 3.1rem 1.5rem;
+  color: #CECECE;
   cursor: pointer;
+  padding: 12px 31px 15px;
 }
-.filter__button:hover {
+.filter-block__button:hover {
   color: #000;
 }
-.filter__button--active {
+.filter-block__button--active {
+  padding: 10px 29px 13px;
+  color: #000;
   border: 2px solid #0052c2;
-  padding: 1rem 2.9rem 1.3rem;
+}
+#portfolio-projects .mix {
+  display: none;
+}
+.portfolio-item {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  max-width: 360px;
+}
+.portfolio-item__image {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 15px;
+  background-image: url("../img/placeholders/project_placeholder.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 190px;
+}
+@media (min-width: 768px) {
+  .portfolio-item__image {
+    min-height: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 992px) {
+  .portfolio-item__image {
+    height: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio-item__image {
+    margin-bottom: 16px;
+    height: 250px;
+  }
+}
+.portfolio-item__image__hover {
+  display: block;
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 60px;
+  text-align: center;
+  font-size: 26px;
+  color: #FFF;
+  background-color: rgba(0, 82, 194, 0.9);
+  -webkit-transition: top 0.5s ease-out;
+  transition: top 0.5s ease-out;
+}
+.portfolio-item__image__hover:hover {
+  color: #FFF;
+}
+.portfolio-item__image__hover .fa {
+  font-size: 64px;
+  margin-bottom: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@media (min-width: 768px) {
+  .portfolio-item__image__hover .fa {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio-item__image__hover .fa {
+    font-size: 64px;
+    position: static;
+    -webkit-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+  }
+}
+.portfolio-item__image__hover span {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .portfolio-item__image__hover span {
+    display: inline-block;
+  }
+}
+.portfolio-item__image:hover .portfolio-item__image__hover {
+  display: block;
+  top: 0%;
+}
+.portfolio-item__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+@media (min-width: 992px) {
+  .portfolio-item__title {
+    font-size: 24px;
+  }
+}
+.portfolio-item__title a {
   color: #000;
+  text-decoration: none;
+}
+.portfolio-item__title a:hover,
+.portfolio-item__title a:focus,
+.portfolio-item__title a:active {
+  color: #0052c2;
+  text-decoration: none;
+}
+@media (min-width: 1200px) {
+  .portfolio-item__title a {
+    border-bottom: 1px dotted #000;
+  }
+  .portfolio-item__title a:hover,
+  .portfolio-item__title a:focus,
+  .portfolio-item__title a:active {
+    border-bottom: 1px dotted #0052c2;
+  }
+}
+.portfolio-item__description {
+  font-size: 14px;
+  line-height: 1.42;
+}
+@media (min-width: 992px) {
+  .portfolio-item__description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 .header {
   height: 39rem;

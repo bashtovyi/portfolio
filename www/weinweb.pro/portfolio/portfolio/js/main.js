@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
  // Скрипт  плавной прокрутки 
-	$(".scroll").on("click","a", function (event) {
+	$(".scroll").on("click","a","span", function (event) {
 		//отменяем стандартную обработку нажатия по ссылке
 		event.preventDefault();
 
@@ -13,6 +13,13 @@ $(document).ready(function() {
 		
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top}, 1000);
-	})
+	});
+
+	
+
+	$('#portfolio-projects').mixItUp();
+
 
 });
+
+
