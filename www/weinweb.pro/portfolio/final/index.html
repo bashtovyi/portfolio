@@ -381,21 +381,30 @@
           </ul>
         </div>
         <!-- // Контакты- текст -->
-         <div class="col-sm-6">
+         <!-- Контакты - Форма -->
+        <div class="col-sm-6">
           <div class="heading heading--medium heading--padding-top heading--white">Связаться со мной</div>
-          <form class="contact-form">
+
+          <form id="contact-form" class="contact-form">
             <input type="text" class="contact-form__input" name="name" placeholder="Имя">
             <input type="text" class="contact-form__input" name="email" placeholder="Email">
+            
 
             <div class="clearfix">
               <input type="text" class="contact-form__input contact-form__input--half-width" name="skype" placeholder="Skype">
               <input type="text" class="contact-form__input contact-form__input--half-width" name="phone" placeholder="Телефон">
             </div>
+            
             <div class="contact-form__bg-pencil">
-              <textarea class="contact-form__textarea" placeholder="Ваше сообщение"></textarea>
+              <textarea class="contact-form__textarea" placeholder="Ваше сообщение" name="message"></textarea>
             </div>
+            
+
+
             <input type="submit" class="contact-form__submit" name="" value="Отправить">
+            
           </form>
+          
         </div>
         <!-- // Контакты - Форма -->
       </div>
@@ -415,9 +424,11 @@
   <!-- Vendor scripts -->
   <script src="libs/jquery/jquery-1.11.2.min.js"></script>
   <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+  <script src="libs/jqueryvalidatae/jquery.validate.js"></script>
   <script type="text/javascript" src="libs/mixitup2/jquery.mixitup.min.js"></script>
   <script src="libs/fancybox/jquery.fancybox.js"></script>
   <script src="libs/jquery/jquery.mousewheel-3.0.6.pack.js"></script>
+  
   <!-- Custom scripts -->
   <script src="js/navigation.js"></script>
   <script src="js/main.js"></script>
