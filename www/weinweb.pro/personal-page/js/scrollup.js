@@ -4,7 +4,7 @@ jQuery( document ).ready(function() {
 	}).mouseout( function(){
 		jQuery( this ).animate({opacity: 1},100);
 	}).click( function(){
-		window.scroll(0 ,0); 
+		$('body,html').animate({ scrollTop: 0 }, 800);
 		return false;
 	});
 
