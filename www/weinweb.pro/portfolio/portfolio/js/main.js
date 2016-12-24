@@ -20,6 +20,17 @@ $(document).ready(function() {
 	$('#portfolio-projects').mixItUp();
 
 
+	$(".fancybox").fancybox({
+			// Default - with fix from scroll to top
+            helpers: {
+                overlay: {
+                    locked: false
+                }
+            }
+    });
+	
+
+
 });
 
 

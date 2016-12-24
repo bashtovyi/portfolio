@@ -447,6 +447,9 @@ a.mouse_scroll:focus {
 .heading--centered {
   text-align: center;
 }
+heading__footer {
+  color: #FFF;
+}
 .definition-list {
   margin: 0 0 4.3rem;
   padding: 0;
