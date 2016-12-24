@@ -20,10 +20,10 @@
     margin-bottom: 0;
   }
 }
-
-#scrollup {
+@media (min-width:768px) {
+  #scrollup {
 position: fixed; /* фиксированная позиция */
-opacity: 0.8; /* прозрачность */
+opacity: 1; /* прозрачность */
 // padding: 15px 10px 10px; /* отступы */
 background: transparent;
 border-radius: 5px; /* скругление углов */
@@ -34,3 +34,6 @@ bottom: 10px; /* отступ снизу */
 display: none; /* спрятать блок */
 cursor: pointer;
 }
+}
+
+
