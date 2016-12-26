@@ -1,0 +1,46 @@
+.copyright {
+  background-color: #003f6d;
+  font-size: 14px;
+  line-height: 1.4;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #5E92B9;
+  p {
+    color: #5E92B9;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0 0 10px;
+  }
+  p.copyright__label {
+    color: #82b3d7;
+    font-size: 16px;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  #scrollup {
+    opacity: 0;
+    position: absolute;
+  }
+  @media (min-width:768px) {
+    #scrollup {
+      position: fixed;
+      /* фиксированная позиция */
+      opacity: 1;
+      /* прозрачность */
+      // padding: 15px 10px 10px; /* отступы */
+      background: transparent;
+      border-radius: 5px;
+      /* скругление углов */
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      right: 10px;
+      /* отступ слева */
+      bottom: 10px;
+      /* отступ снизу */
+      display: none;
+      /* спрятать блок */
+      cursor: pointer;
+    }
+  }
+}
